@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Georgia', serif;
+  color: #333;
+  background: #fffefc;
+  line-height: 1.6;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: #005f73;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+header {
+  background: #02212d;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav a {
+  color: #fff;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+
+.hero {
+  background: url('goa.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  background: rgba(0,0,0,0.5);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+
+footer {
+  background: #02212d;
+  color: #f9f9f9;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+}
